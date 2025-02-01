@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editPrenom" type="id" />
+    <item name="editTel" type="id" />
+    <item name="editPhone" type="id" />
+    <item name="recyclerViewClients" type="id" />
+</resources>
