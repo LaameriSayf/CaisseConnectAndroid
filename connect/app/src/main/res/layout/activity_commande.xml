@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Space for header (empty space reserved for fields or buttons) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="95dp">
+        <!-- Spinner for filtering commandes by Etat -->
+        <Spinner
+            android:id="@+id/spinnerEtat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_spinner_background"
+        android:padding="8dp"
+        android:entries="@array/etat_options" />
+
+    </LinearLayout>
+
+    <!-- RecyclerView for the list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCommandes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <!-- Add Commande Button -->
+    <Button
+        android:id="@+id/btnAddCommande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Commande"
+        android:textColor="@android:color/white"
+        android:background="@color/primary"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Space for footer (empty space reserved for fields or buttons) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="34dp">
+        <!-- Reserved space for future footer content -->
+    </LinearLayout>
+
+</LinearLayout>

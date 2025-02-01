@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <!-- Title Bar with Back Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Retour"
+            android:src="@drawable/ic_6" />
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter Client"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        android:layout_marginTop="8dp"
+        android:indeterminateTint="#2197F4" />
+
+    <!-- Nom Field with Icon Inside -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nom"
+
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp" />
+
+    <!-- Prénom Field with Icon Inside -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:hint="Prénom"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp" />
+
+    <!-- Téléphone Field with Icon Inside -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Téléphone"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Téléphone"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/call_5794291"
+        android:drawablePadding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp" />
+
+    <!-- RIB Field with Icon Inside -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RIB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        android:textColor="#333"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editRib"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="RIB"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/business_16576723"
+        android:drawablePadding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonAddClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter_client"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

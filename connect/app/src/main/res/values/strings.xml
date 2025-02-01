@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">connect+</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_add_commande">Add Commande</string>
+    <string name="ajouter_client">Ajouter Client</string>
+    <string name="rib">RIB</string>
+    <string name="t_l_phone">Téléphone</string>
+    <string name="t_l_phone_123456789">Téléphone: 123456789</string>
+    <string name="nom_john_doe">Nom: John Doe</string>
+    <string name="edit_client">Edit Client</string>
+    <string name="delete_client">Delete Client</string>
+    <string name="ajouter">Ajouter</string>
+    <string-array name="etat_options">
+        <item>PAYE</item>
+        <item>NON_PAYE</item>
+        <item>SEMI_PAYE</item>
+        <item>All</item>
+    </string-array>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string-array name="etats_array">
+        <item>PAYE</item>
+        <item>NON_PAYE</item>
+        <item>SEMI_PAYE</item>
+    </string-array>
+
+    <!-- Array for paiement -->
+    <string-array name="paiement_array">
+        <item>CHEQUE</item>
+        <item>LETTRE_ECHANGE</item>
+        <item>ESPECE</item>
+    </string-array>
+</resources>

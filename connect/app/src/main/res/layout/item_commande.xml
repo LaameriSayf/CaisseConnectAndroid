@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp"
+    android:radius="8dp">
+
+    <!-- ID Commande -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+        <TextView
+            android:id="@+id/idCommande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Date Commande -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Commande:"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/dateCommande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Quantité -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantité:"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/quantite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Montant -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Montant:"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/montant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Etat -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etat:"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/etat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:background="@drawable/etat_background"
+            android:text="Result"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- Mode Paiement -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode Paiement:"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/modePaiement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Remarque -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarque:"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/remarque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteCommandeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/supprimer"
+        android:textColor="#FF0000"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <Button
+        android:id="@+id/editCommandeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/editer"
+        android:textColor="#97A1C7" />
+
+</LinearLayout>
